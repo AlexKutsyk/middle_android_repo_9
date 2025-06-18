@@ -24,7 +24,6 @@ class LoginViewModel : ViewModel() {
         viewModelScope.launch {
             _state.value = LoginScreenState.Loading
             delay(3000)
-            // Имитация успешного входа
             _state.value = LoginScreenState.Success
         }
     }
